@@ -1,36 +1,41 @@
-* {
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
-}
-
 body {
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
 
-nav {
-  background: #b76837;
-  padding: 0.5em;
+
+header {
+  padding: 1em 2em;
+  background: #B76837;
+  color: white;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  margin-bottom: 10px;
+  z-index: 10;
 }
 
-ul li {
-  float: left;
-  text-decoration: none;
-  display: inline;
+.wrapper {
+  position: relative;
+}
+
+.title {
+  clear: both;
+  padding-top: 15px;
   font-size: 25px;
-  margin-top: 10px;
-  padding: 10px 5px;
 }
 
-a {
-  text-decoration: none;
+.nav-bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /*float: right;*/
+  border: none;
+}
+
+.nav-bar a {
   color: inherit;
+  text-decoration: none;
 }
 
 h1 {
@@ -38,58 +43,55 @@ h1 {
   left: 0;
   float: left;
   font-size: 50px;
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
 }
 
-nav p {
-  clear: both;
+.tag {
+  /*background: lightgrey;*/
+  color: white;
+  border-radius: 1.5em;
+  padding: 2em;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  left: 10px;
 }
 
-.main {
-  margin-top: 300px;
-  clear: both;
+ul li {
+  display: inline-block;
+  font-size: 23px;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
 }
 
 .landing {
-  background: white;
-  width: 100%;
+  background: url("images/triangles.jpg");
   height: 500px;
-
-}
-
-.landing p {
-  font-size: 20px;
-  color: grey;
-  margin: auto;
-  text-align: center;
-  padding-bottom: 25px;
+  margin-top: 106px;
+  position: relative;
 }
 
 .portfolio {
   background: darkgrey;
-  width: 100%;
   height: 500px;
+  margin: auto;
 }
 
 .about {
-  color: white;
-  margin: auto;
-}
-
-.about_image {
-  width: 100%;
-  margin: auto;
+  background: pink;
+  padding: 6em;
 }
 
 .contact {
-  background: white;
-  width: 100%
-  height: 500px;
+  background: yellow;
+  padding: 4em;
+
 }
 
 .footer {
   background: darkgrey;
-  width: 100%;
-  height: 100px;
+  padding: 4em;
 }
+
+@media
